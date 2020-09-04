@@ -1,0 +1,33 @@
+#classic-card {
+  .card {
+    display: grid;
+    place-items: center;
+    grid-gap: 8rem;
+    grid-template-columns: repeat(3, 1fr);
+
+
+    @media screen and (max-width: 43.75rem) {
+      grid-gap: 4rem;
+      grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    &__image {
+      width: 8rem;
+    }
+
+    &__item {
+      background-color: #fff;
+      display: grid;
+      justify-content: space-around;
+
+
+      place-items: center;
+      width: 100%;
+      padding: 2rem;
+      @include box-shadow-dark();
+    }
+  }
+
+
+}

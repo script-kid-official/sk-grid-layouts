@@ -1,0 +1,22 @@
+#classic-main-layout {
+  .classic-main {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 30vh;
+    &__header {
+      padding: 2rem;
+      grid-column: 1 / -1;
+      background-color: BlueViolet;
+    }
+    &__main {
+      padding: 2rem;
+      background-color: SteelBlue;
+    }
+
+    &__footer {
+      padding: 2rem;
+      grid-column: 1 / -1;
+      background-color: DarkCyan;
+    }
+  }
+}
