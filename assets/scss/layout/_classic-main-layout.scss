@@ -3,11 +3,16 @@
     display: grid;
     grid-template-rows: auto 1fr auto;
     height: 30vh;
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 700;
+
     &__header {
       padding: 2rem;
       grid-column: 1 / -1;
       background-color: BlueViolet;
     }
+
     &__main {
       padding: 2rem;
       background-color: SteelBlue;

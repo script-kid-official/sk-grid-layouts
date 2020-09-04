@@ -3,31 +3,40 @@
   grid-template: auto 1fr auto / auto 1fr auto;
   place-items: center;
   justify-items: center;
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 700;
 
   @media screen and (max-width: 37.5em) {
     grid-template-columns: auto;
   }
-  > * {
+
+  >* {
     width: 100%;
     text-align: center;
   }
+
   &__header {
     padding: 2rem;
     grid-column: 1 / -1;
     background-color: BlueViolet;
   }
+
   &__sidebar-left {
     padding: 2rem;
     background-color: SteelBlue;
   }
+
   &__sidebar-right {
     padding: 2rem;
     background-color: DarkSlateGray;
   }
+
   &__main {
     padding: 2rem;
     background-color: PaleVioletRed;
   }
+
   &__footer {
     padding: 2rem;
     grid-column: 1 / -1;
