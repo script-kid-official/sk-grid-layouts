@@ -173,20 +173,24 @@ footer {
   .navigation__menu {
     list-style: none;
     font-weight: 400;
-    margin: 0 2.4rem; }
+    margin: 0 2.4rem;
+    display: flex; }
     @media screen and (max-width: 37.5em) {
       .navigation__menu {
         margin: 0; } }
   .navigation__menu-item {
     cursor: pointer;
-    display: block;
+    display: flex;
     background-color: #fff;
-    padding: 1rem 2.4rem;
     font-size: 1.8rem;
     font-weight: 700;
+    margin: 0 1rem;
     border-bottom: 1px solid transparent;
     transition: background-color 0.3s;
-    border-radius: 15px; }
+    border-radius: .5rem; }
+    .navigation__menu-item a {
+      width: 100%;
+      padding: 1rem 2.6rem; }
     .navigation__menu-item:hover {
       background-color: rgba(255, 255, 255, 0.8); }
 
@@ -471,11 +475,8 @@ footer {
   opacity: 1; }
 
 #card7 .card__image {
-  z-index: 10;
-  background-color: #fff;
   transition: inherit;
-  transform: translateX(55%);
-  width: 16rem; }
+  transform: translateX(55%); }
 
 #card7 .card__item {
   grid-template-columns: repeat(2, 1fr);

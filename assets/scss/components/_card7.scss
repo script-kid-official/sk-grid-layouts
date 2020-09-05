@@ -4,11 +4,8 @@
 
         &__image {
             @extend .card-image;
-            z-index: 10;
-            background-color: #fff;
             transition: inherit;
             transform: translateX(55%);
-            width: 16rem;
         }
 
         &__item {
@@ -34,13 +31,11 @@
         &__item:hover .card__content {
             transform: translateX(0rem);
             opacity: 1;
-
         }
 
         &__item:hover .card__image {
             transform: translateX(0%);
             opacity: 1;
-
         }
 
     }
