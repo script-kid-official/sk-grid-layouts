@@ -19,7 +19,7 @@ main>*:nth-child(odd) {
 }
 
 footer {
-  background-color: var(--color-black-light);
+  background-color: var(--color-black-light) !important;
   color: #fff;
   text-align: center;
   font-size: 2rem;

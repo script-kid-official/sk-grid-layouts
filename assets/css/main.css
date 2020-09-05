@@ -136,7 +136,7 @@ main > *:nth-child(odd) {
   background-color: #efefef; }
 
 footer {
-  background-color: var(--color-black-light);
+  background-color: var(--color-black-light) !important;
   color: #fff;
   text-align: center;
   font-size: 2rem;
