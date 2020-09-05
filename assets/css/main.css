@@ -103,7 +103,8 @@
   box-sizing: border-box; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #000; }
 
 html {
   font-size: 62.5%; }
@@ -329,12 +330,12 @@ footer {
   position: absolute;
   top: -.4rem;
   left: -.4rem;
-  background: linear-gradient(45deg, red, green, orange, SpringGreen, DarkSlateGray, yellow, coral, white, cyan, GreenYellow, Crimson);
+  background: linear-gradient(45deg, orange, CornflowerBlue, LawnGreen, yellow, coral, Crimson);
   width: calc(100% + .8rem);
   height: calc(100% + .8rem);
   background-size: 400%;
   z-index: -1;
-  animation: card2 40s linear infinite; }
+  animation: card2 20s linear infinite; }
 
 #card3 .card__item {
   transition: all 0.4s linear;
