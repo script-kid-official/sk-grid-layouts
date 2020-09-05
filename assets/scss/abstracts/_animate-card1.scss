@@ -1,0 +1,47 @@
+@keyframes card1-top {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+
+    }
+}
+
+@keyframes card1-right {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(100%);
+
+    }
+}
+
+
+@keyframes card1-bottom {
+    0% {
+        transform: translateX(100%);
+
+    }
+
+    100% {
+        transform: translateX(-100%);
+
+
+    }
+}
+
+@keyframes card1-left {
+    0% {
+        transform: translateY(100%);
+
+    }
+
+    100% {
+        transform: translateY(-100%);
+
+    }
+}

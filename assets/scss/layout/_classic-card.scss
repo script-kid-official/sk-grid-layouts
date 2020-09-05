@@ -1,4 +1,4 @@
-#classic-card {
+#card1 {
   .card {
     display: grid;
     place-items: center;
@@ -20,11 +20,8 @@
       background-color: #fff;
       display: grid;
       justify-content: space-around;
-
-
       place-items: center;
-      width: 100%;
-      padding: 2rem;
+      padding: 8rem 4rem;
       @include box-shadow-dark();
     }
   }
