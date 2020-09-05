@@ -1,0 +1,27 @@
+.card-layout {
+    display: grid;
+    place-items: center;
+    grid-gap: 8rem;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 1.6rem;
+
+    @media screen and (max-width: 43.75rem) {
+        grid-gap: 4rem;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
+
+.card-item {
+    @include box-shadow-dark();
+    background: linear-gradient(45deg, #fff, #fff);
+    display: grid;
+    place-items: center;
+    width: 100%;
+    padding: 2rem;
+    position: relative;
+}
+
+.card-image {
+    width: 16rem;
+}

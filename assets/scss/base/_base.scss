@@ -4,6 +4,10 @@ body {
 
 main>* {
   padding: 8rem;
+
+  @media screen and (max-width: 43.75rem) {
+    padding: 2rem;
+  }
 }
 
 main>*:nth-child(odd) {

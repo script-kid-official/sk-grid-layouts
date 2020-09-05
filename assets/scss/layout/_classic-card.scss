@@ -1,28 +1,14 @@
 #classic-card {
   .card {
-    display: grid;
-    place-items: center;
-    grid-gap: 8rem;
-    grid-template-columns: repeat(3, 1fr);
-    font-size: 1.6rem;
+    @extend .card-layout;
 
-    @media screen and (max-width: 43.75rem) {
-      grid-gap: 4rem;
-      grid-template-columns: repeat(1, 1fr);
-
-    }
 
     &__image {
-      width: 8rem;
+      @extend .card-image;
     }
 
     &__item {
-      background-color: #fff;
-      display: grid;
-      justify-content: space-around;
-      place-items: center;
-      padding: 8rem 4rem;
-      @include box-shadow-dark();
+      @extend .card-item;
     }
   }
 
