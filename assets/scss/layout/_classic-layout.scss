@@ -1,45 +1,49 @@
-.classic-layout {
-  display: grid;
-  grid-template: auto 1fr auto / auto 1fr auto;
-  place-items: center;
-  justify-items: center;
-  font-size: 1.8rem;
-  color: #fff;
-  font-weight: 700;
+#classic-layout {
+  padding: 8rem;
 
-  @media screen and (max-width: 37.5em) {
-    grid-template-columns: auto;
-  }
+  .classic-layout {
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+    place-items: center;
+    justify-items: center;
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 700;
 
-  >* {
-    width: 100%;
-    text-align: center;
-  }
+    @media screen and (max-width: 37.5em) {
+      grid-template-columns: auto;
+    }
 
-  &__header {
-    padding: 2rem;
-    grid-column: 1 / -1;
-    background-color: BlueViolet;
-  }
+    >* {
+      width: 100%;
+      text-align: center;
+    }
 
-  &__sidebar-left {
-    padding: 2rem;
-    background-color: SteelBlue;
-  }
+    &__header {
+      padding: 2rem;
+      grid-column: 1 / -1;
+      background-color: BlueViolet;
+    }
 
-  &__sidebar-right {
-    padding: 2rem;
-    background-color: DarkSlateGray;
-  }
+    &__sidebar-left {
+      padding: 2rem;
+      background-color: SteelBlue;
+    }
 
-  &__main {
-    padding: 2rem;
-    background-color: PaleVioletRed;
-  }
+    &__sidebar-right {
+      padding: 2rem;
+      background-color: DarkSlateGray;
+    }
 
-  &__footer {
-    padding: 2rem;
-    grid-column: 1 / -1;
-    background-color: DarkCyan;
+    &__main {
+      padding: 2rem;
+      background-color: PaleVioletRed;
+    }
+
+    &__footer {
+      padding: 2rem;
+      grid-column: 1 / -1;
+      background-color: DarkCyan;
+    }
   }
 }
