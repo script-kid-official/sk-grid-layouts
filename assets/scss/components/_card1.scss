@@ -1,6 +1,4 @@
 #card1 {
-    padding: 8rem;
-    background-color: #efefef;
 
     .card {
         display: grid;
@@ -26,7 +24,7 @@
             padding: 2rem;
             position: relative;
             overflow: hidden;
-
+            place-items: center;
 
             & span:nth-child(1) {
                 position: absolute;
