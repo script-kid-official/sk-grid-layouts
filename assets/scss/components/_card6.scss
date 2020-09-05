@@ -1,0 +1,46 @@
+#card6 {
+    .card {
+        @extend .card-layout;
+
+        &__image {
+            @extend .card-image;
+            z-index: 10;
+            background-color: #fff;
+            transition: inherit;
+            transform: translateY(4.5rem);
+        }
+
+        &__item {
+            @extend .card-item;
+            @include transition(.4s);
+        }
+
+        &__content {
+            padding: 2rem;
+            text-align: center;
+            background-color: #fff;
+            z-index: 1;
+            opacity: 0;
+            transition: inherit;
+            transform: translateY(-5rem);
+        }
+
+        &__item:hover {
+            transform: scale(1.03);
+        }
+
+        &__item:hover .card__content {
+            transform: translateY(0rem);
+            opacity: 1;
+
+        }
+
+        &__item:hover .card__image {
+            transform: translateY(0rem);
+            opacity: 1;
+
+        }
+
+    }
+
+}
