@@ -42,18 +42,18 @@
 .my-large {
   margin-bottom: 4rem; }
 
-.card-layout, #classic-card .card, #card1 .card, #card2 .card, #card3 .card, #card4 .card, #card5 .card, #card6 .card {
+.card-layout, #classic-card .card, #card1 .card, #card2 .card, #card3 .card, #card4 .card, #card5 .card, #card6 .card, #card7 .card {
   display: grid;
   place-items: center;
   grid-gap: 8rem;
   grid-template-columns: repeat(3, 1fr);
   font-size: 1.6rem; }
-  @media screen and (max-width: 43.75rem) {
-    .card-layout, #classic-card .card, #card1 .card, #card2 .card, #card3 .card, #card4 .card, #card5 .card, #card6 .card {
+  @media screen and (max-width: 62.5rem) {
+    .card-layout, #classic-card .card, #card1 .card, #card2 .card, #card3 .card, #card4 .card, #card5 .card, #card6 .card, #card7 .card {
       grid-gap: 4rem;
       grid-template-columns: repeat(1, 1fr); } }
 
-.card-item, #classic-card .card__item, #card1 .card__item, #card2 .card__item, #card3 .card__item, #card4 .card__item, #card5 .card__item, #card6 .card__item {
+.card-item, #classic-card .card__item, #card1 .card__item, #card2 .card__item, #card3 .card__item, #card4 .card__item, #card5 .card__item, #card6 .card__item, #card7 .card__item {
   box-shadow: var(--box-shadow-dark);
   background: linear-gradient(45deg, #fff, #fff);
   display: grid;
@@ -62,7 +62,7 @@
   padding: 2rem;
   position: relative; }
 
-.card-image, #classic-card .card__image, #card1 .card__image, #card2 .card__image, #card3 .card__image, #card4 .card__image, #card5 .card__image, #card6 .card__image {
+.card-image, #classic-card .card__image, #card1 .card__image, #card2 .card__image, #card3 .card__image, #card4 .card__image, #card5 .card__image, #card6 .card__image, #card7 .card__image {
   width: 16rem; }
 
 @keyframes card1-top {
@@ -360,7 +360,8 @@ footer {
   padding: 2rem;
   text-align: center;
   background-color: #fff;
-  z-index: 1; }
+  z-index: 1;
+  width: 100%; }
 
 #card3 .card__item:nth-child(1):before {
   background: linear-gradient(315deg, #0876b7, red); }
@@ -389,8 +390,6 @@ footer {
         filter: blur(2rem); } }
   #card4 .card__item:hover::after {
     filter: blur(5px); }
-  #card4 .card__item:hover {
-    transform: translateY(-0.4rem); }
 
 #card4 .card__content {
   padding: 2rem;
@@ -469,4 +468,35 @@ footer {
 
 #card6 .card__item:hover .card__image {
   transform: translateY(0rem);
+  opacity: 1; }
+
+#card7 .card__image {
+  z-index: 10;
+  background-color: #fff;
+  transition: inherit;
+  transform: translateX(55%);
+  width: 16rem; }
+
+#card7 .card__item {
+  grid-template-columns: repeat(2, 1fr);
+  transition: all 0.4s linear; }
+
+#card7 .card__content {
+  padding: 2rem;
+  text-align: center;
+  background-color: #fff;
+  z-index: 1;
+  opacity: 0;
+  transition: inherit;
+  transform: translateX(-5rem); }
+
+#card7 .card__item:hover {
+  transform: scale(1.07); }
+
+#card7 .card__item:hover .card__content {
+  transform: translateX(0rem);
+  opacity: 1; }
+
+#card7 .card__item:hover .card__image {
+  transform: translateX(0%);
   opacity: 1; }
