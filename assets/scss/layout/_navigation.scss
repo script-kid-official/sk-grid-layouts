@@ -1,19 +1,22 @@
 .navigation {
+  position: fixed;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   font-size: 1.6rem;
   text-transform: uppercase;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #c3c3c3;
-  background-color: var(--color-primary-light);
+  background-color: var(--color-black-light);
   color: #fff;
   text-align: center;
+  z-index: 1000;
 
   @media screen and (max-width: 37.5em) {
     justify-content: center;
     padding: 1.6rem 0rem;
   }
+
   &__logo {
     display: flex;
     place-items: center;
@@ -25,6 +28,7 @@
       margin-right: 2rem;
     }
   }
+
   &__menu {
     list-style: none;
     font-weight: 400;

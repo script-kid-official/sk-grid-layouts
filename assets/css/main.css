@@ -25,6 +25,7 @@
 :root {
   --color-primary-light: #009be5;
   --color-primary-dark: #1b6aac;
+  --color-black-light: rgb(23 23 23 / 90%);
   --box-shadow-light: 0.3rem 0.4rem 1rem rgba(0, 0, 0, 0.15);
   --box-shadow-dark: 1.2rem 1.2rem 1.4rem rgba(0, 0, 0, 0.35); }
 
@@ -122,26 +123,40 @@ h3 {
 body {
   background-color: #fff; }
 
-main > * {
+main {
+  padding-top: 8rem; }
+
+main > *:not(:last-child) {
   padding: 8rem; }
   @media screen and (max-width: 43.75rem) {
-    main > * {
+    main > *:not(:last-child) {
       padding: 2rem; } }
 
 main > *:nth-child(odd) {
   background-color: #efefef; }
 
+footer {
+  background-color: var(--color-black-light);
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem 0;
+  text-transform: uppercase;
+  font-weight: 700; }
+
 .navigation {
+  position: fixed;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   font-size: 1.6rem;
   text-transform: uppercase;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #c3c3c3;
-  background-color: var(--color-primary-light);
+  background-color: var(--color-black-light);
   color: #fff;
-  text-align: center; }
+  text-align: center;
+  z-index: 1000; }
   @media screen and (max-width: 37.5em) {
     .navigation {
       justify-content: center;

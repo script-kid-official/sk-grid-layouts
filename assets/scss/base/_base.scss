@@ -2,7 +2,11 @@ body {
   background-color: #fff;
 }
 
-main>* {
+main {
+  padding-top: 8rem;
+}
+
+main>*:not(:last-child) {
   padding: 8rem;
 
   @media screen and (max-width: 43.75rem) {
@@ -12,4 +16,14 @@ main>* {
 
 main>*:nth-child(odd) {
   background-color: #efefef;
+}
+
+footer {
+  background-color: var(--color-black-light);
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem 0;
+  text-transform: uppercase;
+  font-weight: 700;
 }
