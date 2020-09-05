@@ -12,11 +12,11 @@
             &:before {
                 content: '';
                 position: absolute;
-                top: -.2rem;
-                left: -.2rem;
+                top: -.4rem;
+                left: -.4rem;
                 background: linear-gradient(45deg, red, green, orange, SpringGreen, DarkSlateGray, yellow, coral, white, cyan, GreenYellow, Crimson);
-                width: calc(100% + .4rem);
-                height: calc(100% + .4rem);
+                width: calc(100% + .8rem);
+                height: calc(100% + .8rem);
                 background-size: 400%;
                 z-index: -1;
                 animation: card2 40s linear infinite;

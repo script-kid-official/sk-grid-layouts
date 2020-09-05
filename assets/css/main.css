@@ -41,18 +41,18 @@
 .my-large {
   margin-bottom: 4rem; }
 
-.card-layout, #classic-card .card, #card1 .card, #card2 .card {
+.card-layout, #classic-card .card, #card1 .card, #card2 .card, #card3 .card {
   display: grid;
   place-items: center;
   grid-gap: 8rem;
   grid-template-columns: repeat(3, 1fr);
   font-size: 1.6rem; }
   @media screen and (max-width: 43.75rem) {
-    .card-layout, #classic-card .card, #card1 .card, #card2 .card {
+    .card-layout, #classic-card .card, #card1 .card, #card2 .card, #card3 .card {
       grid-gap: 4rem;
       grid-template-columns: repeat(1, 1fr); } }
 
-.card-item, #classic-card .card__item, #card1 .card__item, #card2 .card__item {
+.card-item, #classic-card .card__item, #card1 .card__item, #card2 .card__item, #card3 .card__item {
   box-shadow: var(--box-shadow-dark);
   background: linear-gradient(45deg, #fff, #fff);
   display: grid;
@@ -61,7 +61,7 @@
   padding: 2rem;
   position: relative; }
 
-.card-image, #classic-card .card__image, #card1 .card__image, #card2 .card__image {
+.card-image, #classic-card .card__image, #card1 .card__image, #card2 .card__image, #card3 .card__image {
   width: 16rem; }
 
 @keyframes card1-top {
@@ -279,16 +279,16 @@ main > *:nth-child(odd) {
     top: 0;
     left: 0;
     width: 100%;
-    height: .3rem;
+    height: .5rem;
     background: linear-gradient(to right, transparent, var(--color-primary-dark));
     animation: card1-top 2s linear infinite; }
   #card1 .card__item span:nth-child(2) {
     position: absolute;
     top: 0;
     right: 0;
-    width: .3rem;
+    width: .5rem;
     height: 100%;
-    background: linear-gradient(to bottom, transparent, SpringGreen);
+    background: linear-gradient(to bottom, transparent, LimeGreen);
     animation: card1-right 2s linear infinite;
     animation-delay: 1s; }
   #card1 .card__item span:nth-child(3) {
@@ -296,14 +296,14 @@ main > *:nth-child(odd) {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: .3rem;
+    height: .5rem;
     background: linear-gradient(to left, transparent, red);
     animation: card1-bottom 2s linear infinite; }
   #card1 .card__item span:nth-child(4) {
     position: absolute;
     top: 0;
     left: 0;
-    width: .3rem;
+    width: .5rem;
     height: 100%;
     background: linear-gradient(to top, transparent, DarkViolet);
     animation: card1-left 2s linear infinite;
@@ -312,11 +312,45 @@ main > *:nth-child(odd) {
 #card2 .card__item:before {
   content: '';
   position: absolute;
-  top: -.2rem;
-  left: -.2rem;
+  top: -.4rem;
+  left: -.4rem;
   background: linear-gradient(45deg, red, green, orange, SpringGreen, DarkSlateGray, yellow, coral, white, cyan, GreenYellow, Crimson);
-  width: calc(100% + .4rem);
-  height: calc(100% + .4rem);
+  width: calc(100% + .8rem);
+  height: calc(100% + .8rem);
   background-size: 400%;
   z-index: -1;
   animation: card2 40s linear infinite; }
+
+#card3 .card__item {
+  transition: all 0.4s linear;
+  padding: 0rem; }
+  #card3 .card__item:before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: -9px;
+    bottom: -9px;
+    right: -9px;
+    z-index: 1;
+    z-index: 1;
+    transform: skew(2deg, 2deg);
+    transition: inherit; }
+  #card3 .card__item:hover::before {
+    transform: skew(-2deg, -2deg); }
+  #card3 .card__item:hover {
+    transform: translateY(-0.4rem); }
+
+#card3 .card__content {
+  padding: 2rem;
+  text-align: center;
+  background-color: #fff;
+  z-index: 1; }
+
+#card3 .card__item:nth-child(1):before {
+  background: linear-gradient(315deg, #0876b7, red); }
+
+#card3 .card__item:nth-child(2):before {
+  background: linear-gradient(315deg, BlueViolet, PaleVioletRed); }
+
+#card3 .card__item:nth-child(3):before {
+  background: linear-gradient(315deg, SlateBlue, YellowGreen); }

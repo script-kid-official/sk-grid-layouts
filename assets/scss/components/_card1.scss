@@ -17,7 +17,7 @@
                 top: 0;
                 left: 0;
                 width: 100%;
-                height: .3rem;
+                height: .5rem;
                 background: linear-gradient(to right, transparent, var(--color-primary-dark));
                 animation: card1-top 2s linear infinite;
             }
@@ -26,9 +26,9 @@
                 position: absolute;
                 top: 0;
                 right: 0;
-                width: .3rem;
+                width: .5rem;
                 height: 100%;
-                background: linear-gradient(to bottom, transparent, SpringGreen);
+                background: linear-gradient(to bottom, transparent, LimeGreen);
                 animation: card1-right 2s linear infinite;
                 animation-delay: 1s;
             }
@@ -39,7 +39,7 @@
                 bottom: 0;
                 left: 0;
                 width: 100%;
-                height: .3rem;
+                height: .5rem;
                 background: linear-gradient(to left, transparent, red);
                 animation: card1-bottom 2s linear infinite;
             }
@@ -48,7 +48,7 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                width: .3rem;
+                width: .5rem;
                 height: 100%;
                 background: linear-gradient(to top, transparent, DarkViolet);
                 animation: card1-left 2s linear infinite;

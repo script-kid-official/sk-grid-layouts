@@ -1,3 +1,7 @@
 @mixin box-shadow-dark() {
   box-shadow: var(--box-shadow-dark);
 }
+
+@mixin transition($duration: 0.3s) {
+  transition: all $duration linear;
+}
