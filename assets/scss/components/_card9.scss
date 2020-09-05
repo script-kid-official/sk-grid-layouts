@@ -1,11 +1,10 @@
-#card8 {
+#card9 {
     .card {
         @extend .card-layout;
 
         &__image {
             @extend .card-image;
             z-index: 10;
-            background-color: #fff;
             transition: inherit;
             transform: translateX(55%);
         }
@@ -31,7 +30,7 @@
         }
 
         &__item:hover .card__content {
-            transform: translateX(-55%);
+            transform: translateX(-50%);
             opacity: 1;
 
         }
@@ -39,6 +38,32 @@
         &__item:hover .card__image {
             opacity: 0;
 
+        }
+
+        &__item:nth-child(1) {
+            background: linear-gradient(315deg, #0876b7, green);
+        }
+
+        &__item:hover:nth-child(1) {
+            background: linear-gradient(315deg, rgba(8, 119, 183, 0.7), rgba(0, 128, 0, 0.7));
+        }
+
+        &__item:nth-child(2) {
+            background: linear-gradient(315deg, BlueViolet, PaleVioletRed);
+
+        }
+
+        &__item:hover:nth-child(2) {
+            background: linear-gradient(315deg, rgba(137, 43, 226, 0.7), rgba(216, 112, 147, 0.7));
+
+        }
+
+        &__item:nth-child(3) {
+            background: linear-gradient(315deg, OrangeRed, YellowGreen);
+        }
+
+        &__item:hover:nth-child(3) {
+            background: linear-gradient(315deg, rgba(255, 68, 0, 0.7), rgba(153, 205, 50, 0.7));
         }
 
     }
