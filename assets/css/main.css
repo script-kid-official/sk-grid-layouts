@@ -845,9 +845,6 @@ footer {
       height: 100%;
       width: 100%;
       background-position: center center; }
-      @media screen and (max-width: 43.75rem) {
-        #home6 .home__left {
-          height: 25vh; } }
     #home6 .home__right {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -856,6 +853,7 @@ footer {
       padding: 5vw; }
       @media screen and (max-width: 43.75rem) {
         #home6 .home__right {
+          grid-row: 1 / -1;
           padding: 4rem; } }
     #home6 .home__title {
       grid-column: 1 / -1; }
