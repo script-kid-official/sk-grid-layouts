@@ -1,0 +1,65 @@
+#card12 {
+    .card {
+        @extend .card-layout;
+        place-items: flex-start;
+
+        &__image {
+            @extend .card-image;
+            z-index: 10;
+            transition: inherit;
+            margin: 0 auto;
+            display: block;
+        }
+
+        &__item {
+            @extend .card-item;
+            @include transition(.6s);
+            padding: 0;
+        }
+
+        &__front,
+        &__back {
+            transition: inherit;
+            width: 100%;
+            padding: 2.5rem;
+        }
+
+        &__front {
+            z-index: 2;
+            background-color: red;
+        }
+
+        &__back {
+            display: grid;
+            background-color: #fff;
+            place-items: center;
+            margin-top: -14rem;
+            z-index: 1;
+        }
+
+        &__item:hover .card__back {
+            margin-top: 0rem;
+        }
+
+        &__item:hover .card__image {
+            transform: translateY(0rem);
+            opacity: 1;
+        }
+
+
+
+        &__item:nth-child(1) .card__front {
+            background: linear-gradient(315deg, #0876b7, green);
+        }
+
+        &__item:nth-child(2) .card__front {
+            background: linear-gradient(315deg, BlueViolet, PaleVioletRed);
+        }
+
+        &__item:nth-child(3) .card__front {
+            background: linear-gradient(315deg, OrangeRed, YellowGreen);
+        }
+
+    }
+
+}
