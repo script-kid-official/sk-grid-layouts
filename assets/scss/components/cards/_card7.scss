@@ -12,6 +12,7 @@
             @extend .card-item;
             grid-template-columns: repeat(2, 1fr);
             @include transition(.4s);
+
         }
 
         &__content {
@@ -37,6 +38,20 @@
             transform: translateX(0%);
             opacity: 1;
         }
+
+
+        &__item:nth-child(1) {
+            background: linear-gradient(315deg, #0876b7, green);
+        }
+
+        &__item:nth-child(2) {
+            background: linear-gradient(315deg, BlueViolet, PaleVioletRed);
+        }
+
+        &__item:nth-child(3) {
+            background: linear-gradient(315deg, OrangeRed, YellowGreen);
+        }
+
 
     }
 

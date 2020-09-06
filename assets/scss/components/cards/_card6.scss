@@ -5,7 +5,6 @@
         &__image {
             @extend .card-image;
             z-index: 10;
-            background-color: #fff;
             transition: inherit;
             transform: translateY(4.5rem);
         }
@@ -13,6 +12,16 @@
         &__item {
             @extend .card-item;
             @include transition(.4s);
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 1em;
+                bottom: 1em;
+                left: 1em;
+                right: 1em;
+                border: 3px solid currentColor;
+            }
         }
 
         &__content {
@@ -40,6 +49,7 @@
             opacity: 1;
 
         }
+
 
     }
 

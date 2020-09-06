@@ -14,18 +14,19 @@
 
         &__item {
             @extend .card-item;
-            @include transition(.4s);
+            @include transition(1s);
             padding: 0;
             height: 100%;
             background-color: transparent;
             box-shadow: none;
 
             &:hover>.card__front {
-                transform: perspective(80rem) rotateY(-180deg);
+                transform: perspective(120rem) rotateY(-180deg);
             }
 
             &:hover>.card__back {
-                transform: perspective(80rem) rotateY(0deg);
+                opacity: 1;
+                transform: perspective(120rem) rotateY(0deg);
             }
         }
 
@@ -44,11 +45,12 @@
         }
 
         &__front {
-            transform: perspective(80rem) rotateY(0deg);
+            transform: perspective(120rem) rotateY(0deg);
         }
 
         &__back {
-            transform: perspective(80rem) rotateY(180deg);
+            opacity: 0;
+            transform: perspective(120rem) rotateY(180deg);
         }
 
         &__item:nth-child(1) .card__front {
