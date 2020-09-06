@@ -23,11 +23,12 @@
     display: flex;
     place-items: center;
     font-style: italic;
-    padding: 1.6rem 2rem;
+    padding: 1.1rem 2rem;
 
     @media screen and (max-width: 43.75em) {
       justify-content: center;
-      padding: 0rem;
+      padding: 0;
+      padding-bottom: 2rem;
     }
 
     img {

@@ -65,6 +65,17 @@
 .card-image, #classic-card .card__image, #card1 .card__image, #card2 .card__image, #card3 .card__image, #card4 .card__image, #card5 .card__image, #card6 .card__image, #card7 .card__image, #card8 .card__image, #card9 .card__image {
   width: 16rem; }
 
+.home-layout, #home1, #home2 {
+  position: relative;
+  height: 40vh;
+  background-position: center center;
+  grid-template-rows: repeat(3, 1fr);
+  margin-bottom: 2rem; }
+  @media screen and (max-width: 43.75rem) {
+    .home-layout, #home1, #home2 {
+      height: 100%;
+      font-size: 1.6rem; } }
+
 @keyframes card1-top {
   0% {
     transform: translateX(-100%); }
@@ -170,11 +181,12 @@ footer {
     display: flex;
     place-items: center;
     font-style: italic;
-    padding: 1.6rem 2rem; }
+    padding: 1.1rem 2rem; }
     @media screen and (max-width: 43.75em) {
       .navigation__logo {
         justify-content: center;
-        padding: 0rem; } }
+        padding: 0;
+        padding-bottom: 2rem; } }
     .navigation__logo img {
       width: 6rem;
       margin-right: 2rem; }
@@ -593,11 +605,7 @@ footer {
 
 #home1 {
   background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.719)), url(https://source.unsplash.com/random);
-  background-size: cover;
-  position: relative;
-  height: 40vh;
-  background-position: center center;
-  grid-template-rows: repeat(3, 1fr); }
+  background-size: cover; }
   @media screen and (max-width: 43.75rem) {
     #home1 {
       height: 100%;
@@ -615,11 +623,10 @@ footer {
     border-radius: 10px;
     gap: 1.5rem;
     text-align: center;
-    width: 55vw; }
+    width: 50vw; }
     @media screen and (max-width: 43.75rem) {
       #home1 .home1 {
         position: relative;
-        margin: 2rem;
         transform: translate(0);
         width: 90vw;
         top: 0%;
@@ -634,4 +641,39 @@ footer {
       font-size: 2rem; }
       @media screen and (max-width: 43.75rem) {
         #home1 .home1__text {
+          font-size: 1.4rem; } }
+
+#home2 {
+  background-image: linear-gradient(130deg, rgba(0, 0, 0, 0.7) 50%, transparent 50%), url(https://source.unsplash.com/random);
+  background-size: cover; }
+  #home2 .home2 {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5vh 5vw;
+    border-radius: 10px;
+    gap: 1.5rem;
+    text-align: center;
+    width: 55vw; }
+    @media screen and (max-width: 43.75rem) {
+      #home2 .home2 {
+        position: relative;
+        transform: translate(0);
+        width: 90vw;
+        top: 0%;
+        left: 0%; } }
+    @media screen and (max-width: 43.75rem) {
+      #home2 .home2__title {
+        font-size: 3.2rem; } }
+    @media screen and (max-width: 43.75rem) {
+      #home2 .home2__sub-title {
+        font-size: 1.8rem; } }
+    #home2 .home2__text {
+      font-size: 2rem; }
+      @media screen and (max-width: 43.75rem) {
+        #home2 .home2__text {
           font-size: 1.4rem; } }
