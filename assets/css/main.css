@@ -62,7 +62,7 @@
   padding: 2rem;
   position: relative; }
 
-.card-image, #classic-card .card__image, #card1 .card__image, #card2 .card__image, #card3 .card__image, #card4 .card__image, #card5 .card__image, #card6 .card__image, #card7 .card__image, #card8 .card__image, #card9 .card__image, #card10 .card__image, #card11 .card__image, #card12 .card__image {
+.card-image, #classic-card .card__image, #grid-four-by-two .grid__image, #card1 .card__image, #card2 .card__image, #card3 .card__image, #card4 .card__image, #card5 .card__image, #card6 .card__image, #card7 .card__image, #card8 .card__image, #card9 .card__image, #card10 .card__image, #card11 .card__image, #card12 .card__image {
   width: 16rem; }
 
 .home-layout, #home1, #home2, #home3, #home4, #home5, #home6, #home7, #home8 {
@@ -322,6 +322,41 @@ footer {
       grid-column: span 2; }
     #classic-grid-layout .classic-grid__item:nth-child(17), #classic-grid-layout .classic-grid__item:nth-child(18), #classic-grid-layout .classic-grid__item:nth-child(19), #classic-grid-layout .classic-grid__item:nth-child(20), #classic-grid-layout .classic-grid__item:nth-child(21), #classic-grid-layout .classic-grid__item:nth-child(22), #classic-grid-layout .classic-grid__item:nth-child(23), #classic-grid-layout .classic-grid__item:nth-child(24), #classic-grid-layout .classic-grid__item:nth-child(25), #classic-grid-layout .classic-grid__item:nth-child(26), #classic-grid-layout .classic-grid__item:nth-child(27), #classic-grid-layout .classic-grid__item:nth-child(28) {
       grid-column: span 1; }
+
+#grid-four-by-two .grid {
+  display: grid;
+  place-items: center;
+  grid-template: repeat(2, 1fr)/repeat(4, 1fr);
+  font-size: 1.8rem;
+  color: white; }
+  @media screen and (max-width: 62.5rem) {
+    #grid-four-by-two .grid {
+      grid-template-columns: repeat(1, 1fr); } }
+  #grid-four-by-two .grid > * {
+    width: 100%;
+    height: 25vh; }
+  @media screen and (max-width: 62.5rem) {
+    #grid-four-by-two .grid > *:nth-child(2),
+    #grid-four-by-two .grid > *:nth-child(4),
+    #grid-four-by-two .grid > *:nth-child(5),
+    #grid-four-by-two .grid > *:nth-child(7) {
+      display: none; } }
+  #grid-four-by-two .grid > *:nth-child(1) {
+    display: grid;
+    place-items: center;
+    background-color: #3700ff; }
+  #grid-four-by-two .grid > *:nth-child(3) {
+    display: grid;
+    place-items: center;
+    background-color: #cc00d3; }
+  #grid-four-by-two .grid > *:nth-child(6) {
+    display: grid;
+    place-items: center;
+    background-color: #0e8603; }
+  #grid-four-by-two .grid > *:nth-child(8) {
+    display: grid;
+    place-items: center;
+    background-color: #eb3700; }
 
 #card1 .card__item {
   overflow: hidden; }
