@@ -701,7 +701,7 @@ footer {
   transform: translateY(-5rem); }
 
 #card11 .card__item:hover {
-  transform: translateY(-5rem) scale(1.03);
+  transform: translate(-2rem, -5rem) scale(1.03);
   box-shadow: 1rem 1rem 0 BlueViolet, 2rem 2rem 0 PaleVioletRed, 3rem 3rem 0 OrangeRed, 4rem 4rem 0 YellowGreen; }
 
 #card11 .card__item:hover .card__content {
