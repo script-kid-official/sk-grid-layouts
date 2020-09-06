@@ -1,7 +1,14 @@
-#home2 {
+#home3 {
     @extend .home-layout;
-    background-image: linear-gradient(130deg, rgba(0, 0, 0, 0.7) 50%, transparent 50%), url(https://source.unsplash.com/random);
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.719)), url(https://source.unsplash.com/random);
     background-size: cover;
+
+    @media screen and (max-width: 43.75rem) {
+        height: 100%;
+        font-size: 1.6rem;
+    }
+
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
 
     .home {
         display: grid;
@@ -10,12 +17,13 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color: rgba(255, 255, 255, 0.9);
+        border: 1px solid #fff;
+        background-color: rgba(255, 255, 255, 0.8);
         padding: 5vh 5vw;
         border-radius: 10px;
         gap: 1.5rem;
         text-align: center;
-        width: 55vw;
+        width: 50vw;
 
         @media screen and (max-width: 43.75rem) {
             position: relative;
