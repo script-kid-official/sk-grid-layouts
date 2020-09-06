@@ -23,12 +23,16 @@
 @import "layout/classic-grid-layout";
 
 // Components
-@import "components/card1";
-@import "components/card2";
-@import "components/card3";
-@import "components/card4";
-@import "components/card5";
-@import "components/card6";
-@import "components/card7";
-@import "components/card8";
-@import "components/card9";
+// Cards
+@import "components/cards/card1";
+@import "components/cards/card2";
+@import "components/cards/card3";
+@import "components/cards/card4";
+@import "components/cards/card5";
+@import "components/cards/card6";
+@import "components/cards/card7";
+@import "components/cards/card8";
+@import "components/cards/card9";
+
+// Content
+@import "components/home/home1";
