@@ -1,6 +1,6 @@
 #home3 {
     @extend .home-layout;
-    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.719)), url(https://source.unsplash.com/random);
+    background-image: url(https://source.unsplash.com/random);
     background-size: cover;
 
     @media screen and (max-width: 43.75rem) {
