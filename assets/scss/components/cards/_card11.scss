@@ -1,0 +1,57 @@
+#card11 {
+    .card {
+        @extend .card-layout;
+
+        &__image {
+            @extend .card-image;
+            z-index: 10;
+            transition: inherit;
+            transform: translateY(4.5rem);
+        }
+
+        &__item {
+            @extend .card-item;
+            @include transition(.4s);
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 1em;
+                bottom: 1em;
+                left: 1em;
+                right: 1em;
+                border: 3px solid currentColor;
+            }
+        }
+
+        &__content {
+            padding: 2rem;
+            text-align: center;
+            background-color: #fff;
+            z-index: 1;
+            opacity: 0;
+            transition: inherit;
+            transform: translateY(-5rem);
+        }
+
+        &__item:hover {
+            transform: translateY(-5rem) scale(1.03);
+            box-shadow: 1rem 1rem 0 BlueViolet,
+                2rem 2rem 0 PaleVioletRed,
+                3rem 3rem 0 OrangeRed,
+                4rem 4rem 0 YellowGreen;
+        }
+
+        &__item:hover .card__content {
+            transform: translateY(0rem);
+            opacity: 1;
+        }
+
+        &__item:hover .card__image {
+            transform: translateY(0rem);
+            opacity: 1;
+        }
+
+    }
+
+}
