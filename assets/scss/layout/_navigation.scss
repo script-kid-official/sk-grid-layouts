@@ -12,9 +12,11 @@
   text-align: center;
   z-index: 1000;
 
-  @media screen and (max-width: 37.5em) {
+  @media screen and (max-width: 43.75em) {
     justify-content: center;
-    padding: 1.6rem 0rem;
+    padding: 2rem 0rem;
+    position: relative;
+
   }
 
   &__logo {
@@ -22,6 +24,11 @@
     place-items: center;
     font-style: italic;
     padding: 1.6rem 2rem;
+
+    @media screen and (max-width: 43.75em) {
+      justify-content: center;
+      padding: 0rem;
+    }
 
     img {
       width: 6rem;
@@ -35,7 +42,7 @@
     margin: 0 2.4rem;
     display: flex;
 
-    @media screen and (max-width: 37.5em) {
+    @media screen and (max-width: 43.75em) {
       margin: 0;
     }
   }
@@ -50,12 +57,18 @@
     border-bottom: 1px solid transparent;
     transition: background-color 0.3s;
     border-radius: .5rem;
+    place-items: center;
 
 
     a {
       width: 100%;
       padding: 1rem 2.6rem;
+      font-size: inherit;
 
+      @media screen and (max-width: 43.75em) {
+        padding: 1rem;
+        font-size: 1.4rem;
+      }
     }
 
     &:hover {

@@ -4,6 +4,10 @@ body {
 
 main {
   padding-top: 8rem;
+
+  @media screen and (max-width: 43.75rem) {
+    padding: 0;
+  }
 }
 
 main>*:not(:last-child) {
@@ -17,8 +21,6 @@ main>*:not(:last-child) {
 main>*:nth-child(odd) {
   background-color: #efefef;
 }
-
-
 
 footer {
   background-color: var(--color-black-light) !important;
