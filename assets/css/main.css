@@ -65,14 +65,13 @@
 .card-image, #classic-card .card__image, #card1 .card__image, #card2 .card__image, #card3 .card__image, #card4 .card__image, #card5 .card__image, #card6 .card__image, #card7 .card__image, #card8 .card__image, #card9 .card__image {
   width: 16rem; }
 
-.home-layout, #home1, #home2, #home3 {
+.home-layout, #home1, #home2, #home3, #home4, #home5 {
   position: relative;
   height: 50vh;
   background-position: center center;
-  grid-template-rows: repeat(3, 1fr);
   margin-bottom: 2rem; }
   @media screen and (max-width: 43.75rem) {
-    .home-layout, #home1, #home2, #home3 {
+    .home-layout, #home1, #home2, #home3, #home4, #home5 {
       height: 100%;
       font-size: 1.6rem; } }
 
@@ -717,4 +716,91 @@ footer {
       font-size: 2rem; }
       @media screen and (max-width: 43.75rem) {
         #home3 .home__text {
+          font-size: 1.4rem; } }
+
+#home4 {
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.719));
+  padding: 0rem; }
+  @media screen and (max-width: 43.75rem) {
+    #home4 {
+      height: 100%;
+      font-size: 1.6rem; } }
+  #home4 .home {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    place-items: center;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    text-align: center; }
+    @media screen and (max-width: 43.75rem) {
+      #home4 .home {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem; } }
+    #home4 .home__left {
+      background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.719)), url(https://source.unsplash.com/random);
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+      background-position: center center; }
+      @media screen and (max-width: 43.75rem) {
+        #home4 .home__left {
+          height: 25vh; } }
+    @media screen and (max-width: 43.75rem) {
+      #home4 .home__right {
+        padding: 4rem; } }
+    @media screen and (max-width: 43.75rem) {
+      #home4 .home__title {
+        font-size: 3.2rem; } }
+    @media screen and (max-width: 43.75rem) {
+      #home4 .home__sub-title {
+        font-size: 1.8rem; } }
+    #home4 .home__text {
+      font-size: 2rem; }
+      @media screen and (max-width: 43.75rem) {
+        #home4 .home__text {
+          font-size: 1.4rem; } }
+
+#home5 {
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.719));
+  padding: 0rem; }
+  @media screen and (max-width: 43.75rem) {
+    #home5 {
+      height: 100%;
+      font-size: 1.6rem; } }
+  #home5 .home {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    place-items: center;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    text-align: center; }
+    @media screen and (max-width: 43.75rem) {
+      #home5 .home {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem; } }
+    #home5 .home__right {
+      background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.719)), url(https://source.unsplash.com/random);
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+      background-position: center center; }
+      @media screen and (max-width: 43.75rem) {
+        #home5 .home__right {
+          height: 25vh; } }
+    #home5 .home__left {
+      padding: 4rem; }
+    @media screen and (max-width: 43.75rem) {
+      #home5 .home__title {
+        font-size: 3.2rem; } }
+    @media screen and (max-width: 43.75rem) {
+      #home5 .home__sub-title {
+        font-size: 1.8rem; } }
+    #home5 .home__text {
+      font-size: 2rem; }
+      @media screen and (max-width: 43.75rem) {
+        #home5 .home__text {
           font-size: 1.4rem; } }
