@@ -17,6 +17,7 @@
         background-color: rgba(255, 255, 255, .9);
         border-radius: 10px;
         text-align: center;
+        gap: 1.5rem;
 
         @media screen and (max-width: 43.75rem) {
             grid-template-columns: repeat(1, 1fr);
@@ -37,6 +38,8 @@
         }
 
         &__left {
+            display: grid;
+            gap: 1.5rem;
             padding: 4rem;
         }
 
@@ -48,6 +51,7 @@
         }
 
         &__sub-title {
+
             @media screen and (max-width: 43.75rem) {
                 font-size: 1.8rem;
             }

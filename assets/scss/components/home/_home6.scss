@@ -1,7 +1,8 @@
-#home4 {
+#home6 {
     @extend .home-layout;
     background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.719));
     padding: 0rem;
+    height: auto;
 
     @media screen and (max-width: 43.75rem) {
         height: 100%;
@@ -17,7 +18,7 @@
         background-color: rgba(255, 255, 255, .9);
         border-radius: 10px;
         text-align: center;
-
+        grid-auto-rows: 1fr;
 
         @media screen and (max-width: 43.75rem) {
             grid-template-columns: repeat(1, 1fr);
@@ -27,7 +28,6 @@
         &__left {
             background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.719)), url(https://source.unsplash.com/random);
             background-size: cover;
-
             height: 100%;
             width: 100%;
             background-position: center center;
@@ -39,7 +39,11 @@
 
         &__right {
             display: grid;
+            grid-template-columns: repeat(2, 1fr);
             gap: 1.5rem;
+            text-align: left;
+            padding: 5vw;
+            ;
 
             @media screen and (max-width: 43.75rem) {
                 padding: 4rem;
@@ -48,12 +52,15 @@
 
 
         &__title {
+            grid-column: 1 / -1;
+
             @media screen and (max-width: 43.75rem) {
                 font-size: 3.2rem;
             }
         }
 
         &__sub-title {
+            grid-column: 1 / -1;
 
             @media screen and (max-width: 43.75rem) {
                 font-size: 1.8rem;
@@ -63,6 +70,24 @@
 
         &__text {
             font-size: 2rem;
+            grid-column: 1 / -1;
+
+            @media screen and (max-width: 43.75rem) {
+                font-size: 1.4rem;
+            }
+        }
+
+        &__extra-text {
+            font-size: 2rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+            grid-column: 1 / -1;
+            gap: 2.4rem;
+
+            h5 {
+                margin-bottom: 1rem;
+            }
 
             @media screen and (max-width: 43.75rem) {
                 font-size: 1.4rem;
