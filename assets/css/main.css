@@ -26,6 +26,7 @@
   --color-primary-light: #009be5;
   --color-primary-dark: #1b6aac;
   --color-black-light: rgb(23 23 23 / 90%);
+  --color-grey-light: #2d2d2d;
   --box-shadow-light: 0.3rem 0.4rem 1rem rgba(0, 0, 0, 0.15);
   --box-shadow-dark: 1.2rem 1.2rem 1.4rem rgba(0, 0, 0, 0.35); }
 
@@ -65,13 +66,13 @@
 .card-image, #classic-card .card__image, #grid-four-by-two .grid__image, #card1 .card__image, #card2 .card__image, #card3 .card__image, #card4 .card__image, #card5 .card__image, #card6 .card__image, #card7 .card__image, #card8 .card__image, #card9 .card__image, #card10 .card__image, #card11 .card__image, #card12 .card__image {
   width: 16rem; }
 
-.home-layout, #home1, #home2, #home3, #home4, #home5, #home6, #home7, #home8 {
+.home-layout, #home1, #home2, #home3, #home4, #home5, #home6, #home7, #home8, #home9 {
   position: relative;
   height: 50vh;
   background-position: center center;
   margin-bottom: 2rem; }
   @media screen and (max-width: 43.75rem) {
-    .home-layout, #home1, #home2, #home3, #home4, #home5, #home6, #home7, #home8 {
+    .home-layout, #home1, #home2, #home3, #home4, #home5, #home6, #home7, #home8, #home9 {
       height: 100%;
       font-size: 1.6rem; } }
 
@@ -1173,3 +1174,87 @@ footer {
       @media screen and (max-width: 43.75rem) {
         #home8 .home__text {
           font-size: 1.4rem; } }
+
+#home9 {
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.719)), url(https://source.unsplash.com/random);
+  background-size: cover;
+  height: auto;
+  padding: 0;
+  color: #fff; }
+  @media screen and (max-width: 43.75rem) {
+    #home9 {
+      height: 100%;
+      font-size: 1.6rem; } }
+  #home9 .home {
+    display: grid;
+    place-items: center;
+    border: 1px solid #fff;
+    padding: 10vh 5vw;
+    border-radius: 10px;
+    gap: 1.5rem;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s linear; }
+    @media screen and (max-width: 43.75rem) {
+      #home9 .home {
+        position: relative;
+        transform: translate(0);
+        width: 90vw;
+        top: 0%;
+        left: 0%; } }
+    @media screen and (max-width: 43.75rem) {
+      #home9 .home__title {
+        font-size: 3.2rem; } }
+    @media screen and (max-width: 43.75rem) {
+      #home9 .home__sub-title {
+        font-size: 1.8rem; } }
+    #home9 .home__text {
+      font-size: 2rem; }
+      @media screen and (max-width: 43.75rem) {
+        #home9 .home__text {
+          font-size: 1.4rem; } }
+    #home9 .home__door-left, #home9 .home__door-right {
+      height: 100%;
+      position: absolute;
+      background-color: var(--color-grey-light);
+      z-index: 3;
+      width: 50%;
+      top: 0;
+      transition: all 1s linear;
+      transition-delay: 1s; }
+    #home9 .home__door-left {
+      left: 0; }
+    #home9 .home__door-right {
+      right: 0; }
+    #home9 .home__lock-open, #home9 .home__lock-closed {
+      z-index: 7;
+      font-size: 10rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transition: all 0.3s linear; }
+    #home9 .home__lock {
+      z-index: 4;
+      font-size: 10rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transition: all 0.9s linear;
+      transition-delay: 0.2s; }
+    #home9 .home__lock-closed {
+      transform: translate(-60%, -50%); }
+    #home9 .home__lock-open {
+      transform: translate(-50%, -50%);
+      opacity: 0; }
+    #home9 .home:hover .home__door-left {
+      width: 0%; }
+    #home9 .home:hover .home__door-right {
+      width: 0%; }
+    #home9 .home:hover .home__lock {
+      opacity: 0; }
+    #home9 .home:hover .home__lock-open {
+      transform: translate(-38%, -50%) rotate(360deg);
+      opacity: 1; }
+    #home9 .home:hover .home__lock-closed {
+      transform: translate(-38%, -50%) rotate(260deg);
+      opacity: 0; }
