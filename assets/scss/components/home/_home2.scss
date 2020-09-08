@@ -4,18 +4,19 @@
     background-size: cover;
 
     .home {
-        display: grid;
-        place-items: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: rgba(255, 255, 255, 0.9);
-        padding: 5vh 5vw;
-        border-radius: 10px;
-        gap: 1.5rem;
-        text-align: center;
-        width: 55vw;
+        // display: grid;
+        // place-items: center;
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+        // background-color: rgba(255, 255, 255, 0.9);
+        // padding: 5vh 5vw;
+        // border-radius: 10px;
+        // gap: 1.5rem;
+        // text-align: center;
+        // width: 55vw;
+        @extend .home;
 
         @media screen and (max-width: 43.75rem) {
             position: relative;
@@ -25,28 +26,6 @@
             left: 0%;
         }
 
-        &__title {
-
-            @media screen and (max-width: 43.75rem) {
-                font-size: 3.2rem;
-            }
-        }
-
-        &__sub-title {
-
-            @media screen and (max-width: 43.75rem) {
-                font-size: 1.8rem;
-            }
-
-        }
-
-        &__text {
-            font-size: 2rem;
-
-            @media screen and (max-width: 43.75rem) {
-                font-size: 1.4rem;
-            }
-        }
     }
 
 }

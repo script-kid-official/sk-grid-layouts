@@ -68,13 +68,36 @@
 
 .home-layout, #home1, #home2, #home3, #home4, #home5, #home6, #home7, #home8, #home9 {
   position: relative;
-  height: 50vh;
+  height: 30vh;
   background-position: center center;
   margin-bottom: 2rem; }
   @media screen and (max-width: 43.75rem) {
     .home-layout, #home1, #home2, #home3, #home4, #home5, #home6, #home7, #home8, #home9 {
       height: 100%;
       font-size: 1.6rem; } }
+
+.home, #home1 .home, #home2 .home, #home3 .home, #home4 .home, #home5 .home, #home6 .home, #home7 .home, #home8 .home, #home9 .home {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2vh 2vw;
+  gap: 1.5rem;
+  text-align: center;
+  width: 50vw;
+  overflow: hidden; }
+  @media screen and (max-width: 43.75rem) {
+    .home, #home1 .home, #home2 .home, #home3 .home, #home4 .home, #home5 .home, #home6 .home, #home7 .home, #home8 .home, #home9 .home {
+      grid-template-columns: repeat(1, 1fr);
+      position: relative;
+      transform: translate(0);
+      gap: 1rem;
+      top: 0%;
+      left: 0%;
+      width: 100%; } }
 
 @keyframes card1-top {
   0% {
@@ -155,6 +178,9 @@ main > *:not(:last-child) {
 
 main > *:nth-child(odd) {
   background-color: #efefef; }
+
+p {
+  font-size: 1.6rem; }
 
 footer {
   background-color: var(--color-black-light) !important;
@@ -790,73 +816,17 @@ footer {
     #home1 {
       height: 100%;
       font-size: 1.6rem; } }
-  #home1 .home {
-    display: grid;
-    place-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 1px solid #fff;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 5vh 5vw;
-    border-radius: 10px;
-    gap: 1.5rem;
-    text-align: center;
-    width: 50vw; }
-    @media screen and (max-width: 43.75rem) {
-      #home1 .home {
-        position: relative;
-        transform: translate(0);
-        width: 90vw;
-        top: 0%;
-        left: 0%; } }
-    @media screen and (max-width: 43.75rem) {
-      #home1 .home__title {
-        font-size: 3.2rem; } }
-    @media screen and (max-width: 43.75rem) {
-      #home1 .home__sub-title {
-        font-size: 1.8rem; } }
-    #home1 .home__text {
-      font-size: 2rem; }
-      @media screen and (max-width: 43.75rem) {
-        #home1 .home__text {
-          font-size: 1.4rem; } }
 
 #home2 {
   background-image: linear-gradient(130deg, rgba(0, 0, 0, 0.7) 50%, transparent 50%), url(https://source.unsplash.com/random);
   background-size: cover; }
-  #home2 .home {
-    display: grid;
-    place-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 5vh 5vw;
-    border-radius: 10px;
-    gap: 1.5rem;
-    text-align: center;
-    width: 55vw; }
-    @media screen and (max-width: 43.75rem) {
-      #home2 .home {
-        position: relative;
-        transform: translate(0);
-        width: 90vw;
-        top: 0%;
-        left: 0%; } }
-    @media screen and (max-width: 43.75rem) {
-      #home2 .home__title {
-        font-size: 3.2rem; } }
-    @media screen and (max-width: 43.75rem) {
-      #home2 .home__sub-title {
-        font-size: 1.8rem; } }
-    #home2 .home__text {
-      font-size: 2rem; }
-      @media screen and (max-width: 43.75rem) {
-        #home2 .home__text {
-          font-size: 1.4rem; } }
+  @media screen and (max-width: 43.75rem) {
+    #home2 .home {
+      position: relative;
+      transform: translate(0);
+      width: 90vw;
+      top: 0%;
+      left: 0%; } }
 
 #home3 {
   background-image: url(https://source.unsplash.com/random);
@@ -866,38 +836,13 @@ footer {
     #home3 {
       height: 100%;
       font-size: 1.6rem; } }
-  #home3 .home {
-    display: grid;
-    place-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 1px solid #fff;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 5vh 5vw;
-    border-radius: 10px;
-    gap: 1.5rem;
-    text-align: center;
-    width: 50vw; }
-    @media screen and (max-width: 43.75rem) {
-      #home3 .home {
-        position: relative;
-        transform: translate(0);
-        width: 90vw;
-        top: 0%;
-        left: 0%; } }
-    @media screen and (max-width: 43.75rem) {
-      #home3 .home__title {
-        font-size: 3.2rem; } }
-    @media screen and (max-width: 43.75rem) {
-      #home3 .home__sub-title {
-        font-size: 1.8rem; } }
-    #home3 .home__text {
-      font-size: 2rem; }
-      @media screen and (max-width: 43.75rem) {
-        #home3 .home__text {
-          font-size: 1.4rem; } }
+  @media screen and (max-width: 43.75rem) {
+    #home3 .home {
+      position: relative;
+      transform: translate(0);
+      width: 90vw;
+      top: 0%;
+      left: 0%; } }
 
 #home4 {
   background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.719));
@@ -907,14 +852,12 @@ footer {
       height: 100%;
       font-size: 1.6rem; } }
   #home4 .home {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     height: 100%;
-    place-items: center;
-    border: 1px solid #fff;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    text-align: center; }
+    width: 100%;
+    padding: 0;
+    position: relative;
+    grid-auto-rows: 1fr; }
     @media screen and (max-width: 43.75rem) {
       #home4 .home {
         grid-template-columns: repeat(1, 1fr);
@@ -935,17 +878,6 @@ footer {
       @media screen and (max-width: 43.75rem) {
         #home4 .home__right {
           padding: 4rem; } }
-    @media screen and (max-width: 43.75rem) {
-      #home4 .home__title {
-        font-size: 3.2rem; } }
-    @media screen and (max-width: 43.75rem) {
-      #home4 .home__sub-title {
-        font-size: 1.8rem; } }
-    #home4 .home__text {
-      font-size: 2rem; }
-      @media screen and (max-width: 43.75rem) {
-        #home4 .home__text {
-          font-size: 1.4rem; } }
 
 #home5 {
   background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.719));
@@ -955,15 +887,10 @@ footer {
       height: 100%;
       font-size: 1.6rem; } }
   #home5 .home {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     height: 100%;
-    place-items: center;
-    border: 1px solid #fff;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    text-align: center;
-    gap: 1.5rem; }
+    width: 100%;
+    padding: 0; }
     @media screen and (max-width: 43.75rem) {
       #home5 .home {
         grid-template-columns: repeat(1, 1fr);
@@ -981,35 +908,20 @@ footer {
       display: grid;
       gap: 1.5rem;
       padding: 4rem; }
-    @media screen and (max-width: 43.75rem) {
-      #home5 .home__title {
-        font-size: 3.2rem; } }
-    @media screen and (max-width: 43.75rem) {
-      #home5 .home__sub-title {
-        font-size: 1.8rem; } }
-    #home5 .home__text {
-      font-size: 2rem; }
-      @media screen and (max-width: 43.75rem) {
-        #home5 .home__text {
-          font-size: 1.4rem; } }
 
 #home6 {
   background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.719));
-  padding: 0rem;
-  height: auto; }
+  padding: 0rem; }
   @media screen and (max-width: 43.75rem) {
     #home6 {
       height: 100%;
       font-size: 1.6rem; } }
   #home6 .home {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     height: 100%;
-    place-items: center;
-    border: 1px solid #fff;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    text-align: center;
+    width: 100%;
+    padding: 0;
+    position: relative;
     grid-auto-rows: 1fr; }
     @media screen and (max-width: 43.75rem) {
       #home6 .home {
@@ -1023,42 +935,16 @@ footer {
       background-position: center center; }
     #home6 .home__right {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
       gap: 1.5rem;
-      text-align: left;
-      padding: 5vw; }
+      padding: 4rem; }
       @media screen and (max-width: 43.75rem) {
         #home6 .home__right {
-          grid-row: 1 / -1;
           padding: 4rem; } }
-    #home6 .home__title {
-      grid-column: 1 / -1; }
-      @media screen and (max-width: 43.75rem) {
-        #home6 .home__title {
-          font-size: 3.2rem; } }
-    #home6 .home__sub-title {
-      grid-column: 1 / -1; }
-      @media screen and (max-width: 43.75rem) {
-        #home6 .home__sub-title {
-          font-size: 1.8rem; } }
-    #home6 .home__text {
-      font-size: 2rem;
-      grid-column: 1 / -1; }
-      @media screen and (max-width: 43.75rem) {
-        #home6 .home__text {
-          font-size: 1.4rem; } }
     #home6 .home__extra-text {
-      font-size: 2rem;
-      display: grid;
       grid-template-columns: repeat(2, 1fr);
-      width: 100%;
-      grid-column: 1 / -1;
-      gap: 2.4rem; }
-      #home6 .home__extra-text h5 {
-        margin-bottom: 1rem; }
-      @media screen and (max-width: 43.75rem) {
-        #home6 .home__extra-text {
-          font-size: 1.4rem; } }
+      display: grid;
+      text-align: left;
+      font-size: inherit; }
 
 #home7 {
   background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.719));
@@ -1069,18 +955,19 @@ footer {
       height: 100%;
       font-size: 1.6rem; } }
   #home7 .home {
-    display: grid;
+    transition: all 0.3s linear;
     grid-template-columns: repeat(2, 1fr);
     height: 100%;
-    place-items: center;
-    border: 1px solid #fff;
-    border-radius: 10px;
-    text-align: center;
+    width: 100%;
+    padding: 0;
+    position: relative;
     grid-auto-rows: 1fr;
-    transition: all 0.3s linear; }
+    transform: translate(-50%, 0%);
+    gap: 0rem; }
     @media screen and (max-width: 43.75rem) {
       #home7 .home {
         grid-template-columns: repeat(1, 1fr);
+        transform: translate(0%);
         gap: 1rem; } }
     #home7 .home__left {
       background-image: url(https://source.unsplash.com/random);
@@ -1091,27 +978,21 @@ footer {
       background-position: center center;
       background-color: rgba(0, 0, 0, 0.9);
       transition: inherit; }
+      @media screen and (max-width: 43.75rem) {
+        #home7 .home__left {
+          grid-template-columns: repeat(1, 1fr);
+          transform: translate(0%);
+          gap: 1rem; } }
     #home7 .home__right {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 1.5rem;
       text-align: left;
-      padding: 5vw;
-      background-color: rgba(255, 255, 255, 0.9); }
+      padding: 2vh 4vw; }
       @media screen and (max-width: 43.75rem) {
         #home7 .home__right {
           grid-row: 1 / -1;
           padding: 4rem; } }
-    #home7 .home__title {
-      grid-column: 1 / -1; }
-      @media screen and (max-width: 43.75rem) {
-        #home7 .home__title {
-          font-size: 3.2rem; } }
-    #home7 .home__sub-title {
-      grid-column: 1 / -1; }
-      @media screen and (max-width: 43.75rem) {
-        #home7 .home__sub-title {
-          font-size: 1.8rem; } }
     #home7 .home__text {
       font-size: 2rem;
       grid-column: 1 / -1; }
@@ -1130,11 +1011,11 @@ footer {
       @media screen and (max-width: 43.75rem) {
         #home7 .home__extra-text {
           font-size: 1.4rem; } }
-    #home7 .home:hover > .home__left {
+    #home7 #home1 .home:hover > .home__left, #home7 #home2 .home:hover > .home__left, #home7 #home3 .home:hover > .home__left, #home7 #home4 .home:hover > .home__left, #home7 #home5 .home:hover > .home__left, #home7 #home6 .home:hover > .home__left, #home7 .home:hover > .home__left, #home7 #home8 .home:hover > .home__left, #home7 #home9 .home:hover > .home__left {
       transform: translateX(0%); }
 
 #home8 {
-  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.719)), url(https://source.unsplash.com/random);
+  background-image: url(https://source.unsplash.com/random);
   background-size: cover;
   transform: skewY(-2deg);
   margin: 5vh 0; }
@@ -1143,19 +1024,7 @@ footer {
       height: 100%;
       font-size: 1.6rem; } }
   #home8 .home {
-    display: grid;
-    place-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: skewY(2deg) translate(-50%, -50%);
-    border: 1px solid #fff;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 5vh 5vw;
-    border-radius: 10px;
-    gap: 1.5rem;
-    text-align: center;
-    width: 50vw; }
+    transform: skewY(2deg) translate(-50%, -50%); }
     @media screen and (max-width: 43.75rem) {
       #home8 .home {
         position: relative;
@@ -1163,56 +1032,26 @@ footer {
         width: 90vw;
         top: 0%;
         left: 0%; } }
-    @media screen and (max-width: 43.75rem) {
-      #home8 .home__title {
-        font-size: 3.2rem; } }
-    @media screen and (max-width: 43.75rem) {
-      #home8 .home__sub-title {
-        font-size: 1.8rem; } }
-    #home8 .home__text {
-      font-size: 2rem; }
-      @media screen and (max-width: 43.75rem) {
-        #home8 .home__text {
-          font-size: 1.4rem; } }
 
 #home9 {
-  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.719)), url(https://source.unsplash.com/random);
+  background-image: url(https://source.unsplash.com/random);
   background-size: cover;
   height: auto;
-  padding: 0;
-  color: #fff; }
-  @media screen and (max-width: 43.75rem) {
-    #home9 {
-      height: 100%;
-      font-size: 1.6rem; } }
+  padding: 0; }
   #home9 .home {
-    display: grid;
-    place-items: center;
-    border: 1px solid #fff;
-    padding: 10vh 5vw;
-    border-radius: 10px;
-    gap: 1.5rem;
-    text-align: center;
+    transition: all 0.3s linear;
     position: relative;
-    transition: all 0.3s linear; }
+    transform: translate(0);
+    padding: 0; }
     @media screen and (max-width: 43.75rem) {
       #home9 .home {
         position: relative;
         transform: translate(0);
-        width: 90vw;
+        width: 100%;
         top: 0%;
         left: 0%; } }
-    @media screen and (max-width: 43.75rem) {
-      #home9 .home__title {
-        font-size: 3.2rem; } }
-    @media screen and (max-width: 43.75rem) {
-      #home9 .home__sub-title {
-        font-size: 1.8rem; } }
-    #home9 .home__text {
-      font-size: 2rem; }
-      @media screen and (max-width: 43.75rem) {
-        #home9 .home__text {
-          font-size: 1.4rem; } }
+    #home9 .home__content {
+      padding: 5vh 2vw; }
     #home9 .home__door-left, #home9 .home__door-right {
       height: 100%;
       position: absolute;
@@ -1239,6 +1078,7 @@ footer {
       position: absolute;
       top: 50%;
       left: 50%;
+      color: #fff;
       transition: all 0.9s linear;
       transition-delay: 0.2s; }
     #home9 .home__lock-closed {

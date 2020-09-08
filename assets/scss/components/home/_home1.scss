@@ -9,50 +9,9 @@
     }
 
     .home {
-        display: grid;
-        place-items: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border: 1px solid #fff;
-        background-color: rgba(255, 255, 255, 0.8);
-        padding: 5vh 5vw;
-        border-radius: 10px;
-        gap: 1.5rem;
-        text-align: center;
-        width: 50vw;
+       
+        @extend .home;
 
-        @media screen and (max-width: 43.75rem) {
-            position: relative;
-            transform: translate(0);
-            width: 90vw;
-            top: 0%;
-            left: 0%;
-        }
-
-        &__title {
-
-            @media screen and (max-width: 43.75rem) {
-                font-size: 3.2rem;
-            }
-        }
-
-        &__sub-title {
-
-            @media screen and (max-width: 43.75rem) {
-                font-size: 1.8rem;
-            }
-
-        }
-
-        &__text {
-            font-size: 2rem;
-
-            @media screen and (max-width: 43.75rem) {
-                font-size: 1.4rem;
-            }
-        }
     }
 
 }

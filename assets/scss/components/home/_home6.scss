@@ -1,9 +1,7 @@
 #home6 {
     @extend .home-layout;
     background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.719));
-
     padding: 0rem;
-    height: auto;
 
     @media screen and (max-width: 43.75rem) {
         height: 100%;
@@ -11,14 +9,13 @@
     }
 
     .home {
-        display: grid;
+
+        @extend .home;
         grid-template-columns: repeat(2, 1fr);
         height: 100%;
-        place-items: center;
-        border: 1px solid #fff;
-        background-color: rgba(255, 255, 255, .9);
-        border-radius: 10px;
-        text-align: center;
+        width: 100%;
+        padding: 0;
+        position: relative;
         grid-auto-rows: 1fr;
 
         @media screen and (max-width: 43.75rem) {
@@ -29,6 +26,7 @@
         &__left {
             background-image: url(https://source.unsplash.com/random);
             background-size: cover;
+
             height: 100%;
             width: 100%;
             background-position: center center;
@@ -37,60 +35,21 @@
 
         &__right {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
             gap: 1.5rem;
-            text-align: left;
-            padding: 5vw;
+            padding: 4rem;
 
             @media screen and (max-width: 43.75rem) {
-                grid-row: 1 / -1;
                 padding: 4rem;
             }
         }
 
-
-        &__title {
-            grid-column: 1 / -1;
-
-            @media screen and (max-width: 43.75rem) {
-                font-size: 3.2rem;
-            }
-        }
-
-        &__sub-title {
-            grid-column: 1 / -1;
-
-            @media screen and (max-width: 43.75rem) {
-                font-size: 1.8rem;
-            }
-
-        }
-
-        &__text {
-            font-size: 2rem;
-            grid-column: 1 / -1;
-
-            @media screen and (max-width: 43.75rem) {
-                font-size: 1.4rem;
-            }
-        }
-
         &__extra-text {
-            font-size: 2rem;
-            display: grid;
             grid-template-columns: repeat(2, 1fr);
-            width: 100%;
-            grid-column: 1 / -1;
-            gap: 2.4rem;
-
-            h5 {
-                margin-bottom: 1rem;
-            }
-
-            @media screen and (max-width: 43.75rem) {
-                font-size: 1.4rem;
-            }
+            display: grid;
+            text-align: left;
+            font-size: inherit;
         }
+
     }
 
 }

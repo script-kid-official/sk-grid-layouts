@@ -1,56 +1,28 @@
 #home9 {
   @extend .home-layout;
-  background-image: linear-gradient(to bottom right,
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.719)),
+  background-image:
     url(https://source.unsplash.com/random);
   background-size: cover;
   height: auto;
   padding: 0;
-  color: #fff;
-
-  @media screen and (max-width: 43.75rem) {
-    height: 100%;
-    font-size: 1.6rem;
-  }
 
   .home {
-    display: grid;
-    place-items: center;
-    border: 1px solid #fff;
-    padding: 10vh 5vw;
-    border-radius: 10px;
-    gap: 1.5rem;
-    text-align: center;
-    position: relative;
+    @extend .home;
     @include transition();
+    position: relative;
+    transform: translate(0);
+    padding: 0;
 
     @media screen and (max-width: 43.75rem) {
       position: relative;
       transform: translate(0);
-      width: 90vw;
+      width: 100%;
       top: 0%;
       left: 0%;
     }
 
-    &__title {
-      @media screen and (max-width: 43.75rem) {
-        font-size: 3.2rem;
-      }
-    }
-
-    &__sub-title {
-      @media screen and (max-width: 43.75rem) {
-        font-size: 1.8rem;
-      }
-    }
-
-    &__text {
-      font-size: 2rem;
-
-      @media screen and (max-width: 43.75rem) {
-        font-size: 1.4rem;
-      }
+    &__content {
+      padding: 5vh 2vw;
     }
 
     &__door-left,
@@ -89,6 +61,8 @@
       position: absolute;
       top: 50%;
       left: 50%;
+      color: #fff;
+
       @include transition(.9s);
       transition-delay: 0.2s;
     }
@@ -113,7 +87,6 @@
     &:hover .home__lock {
       opacity: 0;
     }
-
 
 
     &:hover .home__lock-open {

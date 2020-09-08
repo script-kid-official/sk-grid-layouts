@@ -9,15 +9,12 @@
     }
 
     .home {
-        display: grid;
+
+        @extend .home;
         grid-template-columns: repeat(2, 1fr);
         height: 100%;
-        place-items: center;
-        border: 1px solid #fff;
-        background-color: rgba(255, 255, 255, .9);
-        border-radius: 10px;
-        text-align: center;
-        gap: 1.5rem;
+        width: 100%;
+        padding: 0;
 
         @media screen and (max-width: 43.75rem) {
             grid-template-columns: repeat(1, 1fr);
@@ -44,27 +41,6 @@
         }
 
 
-        &__title {
-            @media screen and (max-width: 43.75rem) {
-                font-size: 3.2rem;
-            }
-        }
-
-        &__sub-title {
-
-            @media screen and (max-width: 43.75rem) {
-                font-size: 1.8rem;
-            }
-
-        }
-
-        &__text {
-            font-size: 2rem;
-
-            @media screen and (max-width: 43.75rem) {
-                font-size: 1.4rem;
-            }
-        }
     }
 
 }
